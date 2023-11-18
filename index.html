@@ -2,17 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Afnoon</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>I Love You Folla</title>
+  <style>
+    body {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #D2B48C; /* Light brown color */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .animated-text {
+      font-size: 3rem;
+      animation: colorChange 5s infinite alternate;
+    }
+
+    @keyframes colorChange {
+      0% { color: #D2B48C; }
+      50% { color: #FFC300; } /* Change to a different color halfway through animation */
+      100% { color: #D2B48C; }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <textarea id="messageInput" placeholder="اكتب رسالة هنا وهقدر أشوفها لو حابب"></textarea>
-    <p id="output">خليت لون الكلام بني زي ما بتحب.</p>
-    <p id="visitCounter"></p>
-    <button onclick="updateText()">أرسل</button>
-  </div>
-
-  <script src="script.js"></script>
+  <div class="animated-text">I Love You Folla</div>
 </body>
 </html>
