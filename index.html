@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>موقع محذوف</title>
+  <meta charset="UTF-8">
+  <title>Afnoon</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    الموقع لسه محذوف بس انت إلي داخل تشوف محتواه يا ابو العطا 
-    انا هرجعه تاني بس حبيت أخليك تبتسم زي مانت مبتسم دلوقتي 
-    قفشتك يبو العطا😂
+  <div class="container">
+    <textarea id="messageInput" placeholder="اكتب رسالة هنا وهقدر أشوفها لو حابب"></textarea>
+    <p id="output">خليت لون الكلام بني زي ما بتحب.</p>
+    <p id="visitCounter"></p>
+    <button onclick="updateText()">أرسل</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
