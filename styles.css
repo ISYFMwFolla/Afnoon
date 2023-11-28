@@ -1,74 +1,37 @@
+/* ...Your existing CSS... */
 body {
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #D2B48C; /* Light brown text */
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-     line-height: 2;
-    font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #D2B48C; /* Light brown text */
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.centered-text {
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 10px; /* Adjust the margin as needed */
+}
+@media screen and (max-width: 768px) {
+  .image-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  header {
-    text-align: center;
-    padding-bottom: 20px;
+
+  .responsive-image {
+    margin: 10px 0; /* Adjust the margin as needed */
   }
-  
-  h1 {
-    font-size: 3.5vw; /* Responsive font size based on viewport width */
-  }
-  
-  p {
-    font-size: 2vw; /* Responsive font size based on viewport width */
-  }
-  
-  .slideshow-container {
-    max-width: 250px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .slides {
-    display: flex;
-    width: 250px;
-    height: 250px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .slides img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    margin-right: -50px; /* Creates overlap with next image */
-    filter: brightness(1.2) contrast(1.2); /* Example filters for quality enhancement */
-  }
-  
-  button.prev,
-  button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #D2B48C; /* Light brown button color */
-    z-index: 1;
-  }
-  
-  button.prev {
-    left: -40px; /* Position left button outside the image */
-  }
-  
-  button.next {
-    right: -40px; /* Position right button outside the image */
-  }
-  
+}
